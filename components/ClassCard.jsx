@@ -1,9 +1,15 @@
-export const ClassCard = ({ classInfo }) => {
-    return (
-      <div className="p-4 m-2 bg-white shadow-md rounded-lg text-black">
-        <h3 className="text-lg font-bold ">{classInfo.id}</h3>
-        <p><strong>Location:</strong> {classInfo.location}</p>
-        {/* More details and a link to a detailed view can be added here */}
-      </div>
-    );
-  };
+
+
+const ClassCard = ({ classDetail }) => {
+  return (
+    <div className="bg-white shadow-md rounded-lg p-4 mb-4">
+      <h3 className="text-black"> <span className='font-semibold'> Date: </span> {classDetail.date} | <span className='font-semibold'> Grade: </span> {classDetail.grade} </h3>
+
+      <p className="text-gray-800"><span className="font-bold">Practice Plan:</span> {classDetail.practicePlan}</p>
+
+      <p className="text-gray-600 italic">{classDetail.notes}</p>
+    </div>
+  );
+};
+
+export default ClassCard;

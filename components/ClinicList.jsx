@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setSelectedClinic } from '@/lib/features/clinic/clinicSlice';
 import ClinicModal from './ClinicModal';
